@@ -11,7 +11,8 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://qa-inspectly.vercel.app/">
   <meta name="theme-color" content="#0A0A0A">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='2' width='20' height='20' rx='5' fill='none' stroke='%232DD4BF' stroke-width='2.5'/%3E%3Crect x='8' y='8' width='8' height='8' rx='2' fill='%232DD4BF' opacity='0.6'/%3E%3C/svg%3E">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- Open Graph (compartilhamento em redes sociais e WhatsApp) -->
   <meta property="og:type" content="website">
@@ -20,11 +21,16 @@
   <meta property="og:site_name" content="QA Inspectly">
   <meta property="og:title" content="Auditoria de Qualidade de Sites e Sistemas | QA Inspectly">
   <meta property="og:description" content="Seu site passa no teste? Análise automatizada + avaliação de um QA experiente. Relatório com score, evidências e plano de correção.">
+  <meta property="og:image" content="https://qa-inspectly.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="QA Inspectly — auditoria automatizada do seu site, com relatório de score de qualidade">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Auditoria de Qualidade de Sites e Sistemas | QA Inspectly">
   <meta name="twitter:description" content="Seu site passa no teste? Análise automatizada + avaliação de um QA experiente. Relatório com score, evidências e plano de correção.">
+  <meta name="twitter:image" content="https://qa-inspectly.vercel.app/og-image.png">
 
   <!-- Dados estruturados: serviço profissional -->
   <script type="application/ld+json">
@@ -186,20 +192,9 @@
       align-items: center;
       gap: 9px;
     }
-    .logo-mark {
-      width: 22px; height: 22px;
-      border: 2px solid var(--teal);
-      border-radius: 5px;
-      position: relative;
+    .logo svg {
+      width: 26px; height: 26px;
       flex-shrink: 0;
-    }
-    .logo-mark::after {
-      content: '';
-      position: absolute;
-      inset: 4px;
-      border-radius: 2px;
-      background: var(--teal);
-      opacity: 0.5;
     }
     .nav-cta {
       font-family: var(--font-display);
@@ -749,7 +744,19 @@
 
   <nav>
     <div class="nav-inner">
-      <a href="#" class="logo"><span class="logo-mark"></span>QA Inspectly</a>
+      <a href="#" class="logo">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="tgnav" x1="22" y1="22" x2="96" y2="96" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5EEAD4"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+          <path d="M 80.16 86.37 A 36.0 36.0 0 0 1 52.99 93.65" stroke="url(#tgnav)" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M 44.51 91.38 A 36.0 36.0 0 0 1 24.62 71.49" stroke="url(#tgnav)" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M 22.35 63.01 A 36.0 36.0 0 0 1 29.63 35.84" stroke="url(#tgnav)" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M 35.84 29.63 A 36.0 36.0 0 0 1 63.01 22.35" stroke="url(#tgnav)" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M 71.49 24.62 A 36.0 36.0 0 0 1 91.38 44.51" stroke="url(#tgnav)" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M 93.65 52.99 A 36.0 36.0 0 0 1 86.37 80.16" stroke="url(#tgnav)" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M 76.38 76.38 L 96.18 96.18" stroke="#2DD4BF" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <circle cx="58" cy="58" r="6.5" fill="#2DD4BF"/>
+        </svg>
+        QA Inspectly</a>
       <a class="nav-cta" href="https://wa.me/5549991468565?text=Ol%C3%A1%20Mateus%2C%20quero%20uma%20auditoria%20de%20qualidade%20do%20meu%20site." target="_blank" rel="noopener">Solicitar auditoria</a>
     </div>
   </nav>
