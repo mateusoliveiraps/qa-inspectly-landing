@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qa-inspectly.vercel.app/sitemap.xml
+Sitemap: https://qainspectly.com.br/sitemap.xml
